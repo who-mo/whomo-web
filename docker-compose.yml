@@ -1,0 +1,13 @@
+version: '3'
+services:
+  web:
+    image: whomo-web
+    container_name: 'whomo-web'
+    build: .
+    command: /bin/ash -c "yarn install && yarn serve"
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
