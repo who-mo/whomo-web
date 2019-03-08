@@ -1,9 +1,9 @@
 ## Project setup
 ```
-docker-composer build
+docker-compose build
 ```
 
 ### Compiles and hot-reloads for development
 ```
-docker-composer up
+docker-compose up
 ```
